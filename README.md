@@ -28,6 +28,30 @@ brew install --cask openscad
 pipenv install
 ```
 
+## Tutorials
+
+### [sp01_create_cube.py](python/sp01_create_cube.py)
+
+Create only cube object.
+
+### [sp02_convert_to_stl.py](python/sp02_convert_to_stl.py)
+
+Convert to STL file from OpenSCAD code.
+
+[Generated STL 3D object file](python/sp03_pill.stl)
+
+### [sp03_pill.py](python/sp03_pill.py)
+
+Create pill style object. (Cylinder with rounded edges)
+
+[Generated STL 3D object file](python/sp03_pill.stl)
+
+### [sp04_github_contribution.py](python/sp04_github_contribution.py)
+
+Get the contribution calendar from Github and convert it to a 3D object (STL).
+
+[Generated Github contribution calendar STL 3D object file](python/sp04_github_contribution.stl)
+
 ## Included utilities
 
 ### [openscad_utils.py](./python/openscad_utils.py)
