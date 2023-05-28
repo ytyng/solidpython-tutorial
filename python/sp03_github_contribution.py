@@ -30,6 +30,8 @@ max_height = 20
 
 plate = cube([53 * 5, 7 * 5, 2])
 
+open_openscad(plate)
+
 for row_number, row in enumerate(list_chunk(contribution_cells, 7)):
     for col_number, cell in enumerate(row):
         print('{} {} {} {}'.format(row_number, col_number, cell.date_str, cell.contribution_count))
