@@ -38,7 +38,7 @@ Create only cube object.
 
 Convert to STL file from OpenSCAD code.
 
-[Generated STL 3D object file](python/sp03_pill.stl)
+[Generated STL 3D object file](python/sp02_convert_to_stl.stl)
 
 ### [sp03_pill.py](python/sp03_pill.py)
 
