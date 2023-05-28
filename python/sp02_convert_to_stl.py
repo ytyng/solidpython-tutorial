@@ -1,14 +1,11 @@
-from solid import *
 from solid.utils import *
-import pathlib
-from openscad_utils import convert_to_stl
+from openscad_utils import convert_to_stl  # open_openscad,
 
 
 def main():
-    c = cube(10)
-    file_path = pathlib.Path(__file__).parent / 'cube.scad'
-    scad_render_to_file(c, file_path)
-    convert_to_stl(file_path)
+    c = cylinder(5, 10, segments=180)
+    # open_openscad(c)
+    convert_to_stl(c, preview=True)
 
 
 if __name__ == '__main__':

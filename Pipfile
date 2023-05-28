@@ -8,3 +8,5 @@ python_version = "3.11"
 
 [packages]
 solidpython = "*"
+requests = "*"
+beautifulsoup4 = "*"
