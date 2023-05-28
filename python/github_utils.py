@@ -1,16 +1,14 @@
-# https://github.com/ytyng
 import re
 from functools import cached_property
 
 import requests
 from bs4 import BeautifulSoup
-from solid import *
-from solid.utils import *
-
 
 
 class ContributionCell:
-
+    """
+    Github contribution per day
+    """
     def __init__(self, rect_element):
         self.rect_element = rect_element
 
@@ -37,11 +35,12 @@ class ContributionCell:
         return 0
 
 
-def list_chunk(items, chunk_size):
-    return (items[i:i + chunk_size] for i in range(0, len(items), chunk_size))
-
-
-def get_github_contribution_cells(github_user_name: str):
+def get_github_contribution_cells(
+    github_user_name: str
+) -> list[ContributionCell]:
+    """
+    Get github contribution cells from SVG element in github user page
+    """
     response = requests.get(f'https://github.com/{github_user_name}')
 
     response.raise_for_status()

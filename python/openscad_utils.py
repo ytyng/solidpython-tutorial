@@ -8,6 +8,9 @@ app_binary = '/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD'
 
 
 def save_openscad(o: OpenSCADObject):
+    """
+    Save OpenSCAD object to file and return file path.
+    """
     file_path = sys.argv[0].replace('.py', '.scad')
     scad_render_to_file(o, file_path)
     return file_path
